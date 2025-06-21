@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Droxe Hotel - Akomodasi Mewah</title>
+    <meta name="description" content="Rasakan kemewahan dan kenyamanan di Droxe Hotel. Kamar premium, fasilitas kelas dunia, dan pelayanan luar biasa di jantung kota." />
+    <meta name="keywords" content="hotel mewah, akomodasi, kamar premium, reservasi hotel, spa, restoran" />
+    <link rel="stylesheet" href="style.css" />
+    <!--
+    <style>
+		/* Semua perangkat akan mewarisi font dan margin umum */
+  
+		body {
+		  font-family: Arial, sans-serif;
+		  margin: 0;
+		  padding: 0;
+		}
+  
+  
+		/* Konten khusus untuk mobile */
+		.mobile-only {
+		  display: none; /* Default sembunyikan di desktop */
+		}
+  
+		/* Menampilkan elemen khusus desktop ketika ukuran layar lebih dari 768px */
+		@media only screen and (min-width: 769px) {
+		  .desktop-only {
+			display: block;
+		  }
+		}
+  
+		/* Menampilkan elemen khusus mobile ketika ukuran layar kurang dari 768px */
+		@media only screen and (max-width: 768px) {
+		  .mobile-only {
+			display: block;
+		  }
+		}
+	  </style>
+      -->
+  </head>
+  <body>
+    <!--
+    <div class="mobile-only">
+        <div class="erscoming">  
+            <a href="https://cutt.ly/urWmvU5h">  
+            <img src="jwinkasihjepe.jpg" width="100%"></a>  
+            </div> 
+        </div>	
+        <div class="desktop-only">
+    -->
+    <div id="root">
+      <!-- Navigation -->
+      <nav id="navbar">
+        <div class="nav-container">
+          <div class="nav-content">
+            <div class="logo">
+              <h1><span class="logo-gold">Droxe</span> Hotel</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-desktop">
+              <div class="nav-links">
+                <button onclick="scrollToSection('beranda')" class="nav-link">Beranda</button>
+                <button onclick="scrollToSection('kamar')" class="nav-link">Kamar</button>
+                <button onclick="scrollToSection('fasilitas')" class="nav-link">Fasilitas</button>
+                <button onclick="scrollToSection('galeri')" class="nav-link">Galeri</button>
+                <button onclick="scrollToSection('tentang')" class="nav-link">Tentang Kami</button>
+                <button onclick="scrollToSection('kontak')" class="nav-link">Kontak</button>
+              </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="nav-mobile">
+              <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Navigation -->
+          <div id="mobile-menu" class="mobile-menu">
+            <div class="mobile-menu-content">
+              <button onclick="scrollToSection('beranda')" class="mobile-nav-link">Beranda</button>
+              <button onclick="scrollToSection('kamar')" class="mobile-nav-link">Kamar</button>
+              <button onclick="scrollToSection('fasilitas')" class="mobile-nav-link">Fasilitas</button>
+              <button onclick="scrollToSection('galeri')" class="mobile-nav-link">Galeri</button>
+              <button onclick="scrollToSection('tentang')" class="mobile-nav-link">Tentang Kami</button>
+              <button onclick="scrollToSection('kontak')" class="mobile-nav-link">Kontak</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section id="beranda" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Selamat Datang di <span class="hero-gold">Droxe Hotel</span></h1>
+            <p class="hero-subtitle">Rasakan kemewahan dan kenyamanan di jantung kota. Liburan sempurna Anda menanti.</p>
+            <button onclick="scrollToSection('kamar')" class="hero-btn">Pesan Sekarang</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rooms Section -->
+      <section id="kamar" class="rooms">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Kamar Kami</h2>
+            <p class="section-subtitle">Pilih dari kamar-kamar yang dirancang dengan cermat, masing-masing menawarkan fasilitas unik dan pemandangan menakjubkan.</p>
+          </div>
+
+          <div class="rooms-grid">
+            <div class="room-card">
+              <div class="room-image">
+                <img src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kamar Standard" />
+                <div class="room-price">Rp 1.800.000/malam</div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-name">Kamar Standard</h3>
+                <p class="room-description">Kamar standard yang nyaman dan elegan dengan fasilitas modern dan pemandangan kota.</p>
+                <div class="room-features">
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Tempat Tidur King Size</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Pemandangan Kota</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>WiFi Gratis</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Mini Bar</span>
+                  </div>
+                </div>
+                <button class="room-btn">Pesan Kamar Ini</button>
+              </div>
+            </div>
+
+            <div class="room-card">
+              <div class="room-image">
+                <img src="https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kamar Deluxe" />
+                <div class="room-price">Rp 3.000.000/malam</div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-name">Kamar Deluxe</h3>
+                <p class="room-description">Kamar deluxe yang luas dengan perabotan premium dan pemandangan panorama yang menakjubkan.</p>
+                <div class="room-features">
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Pemandangan Laut</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Balkon</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Tempat Tidur Premium</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Room Service</span>
+                  </div>
+                </div>
+                <button class="room-btn">Pesan Kamar Ini</button>
+              </div>
+            </div>
+
+            <div class="room-card">
+              <div class="room-image">
+                <img src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Suite Eksekutif" />
+                <div class="room-price">Rp 5.250.000/malam</div>
+              </div>
+              <div class="room-content">
+                <h3 class="room-name">Suite Eksekutif</h3>
+                <p class="room-description">Suite mewah dengan ruang tamu terpisah, fasilitas premium, dan layanan eksklusif.</p>
+                <div class="room-features">
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Ruang Tamu Terpisah</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Pemandangan Premium</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Layanan Concierge</span>
+                  </div>
+                  <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <span>Sarapan Gratis</span>
+                  </div>
+                </div>
+                <button class="room-btn">Pesan Kamar Ini</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Facilities Section -->
+      <section id="fasilitas" class="facilities">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Fasilitas Hotel</h2>
+            <p class="section-subtitle">Nikmati fasilitas kelas dunia yang dirancang untuk membuat menginap Anda luar biasa.</p>
+          </div>
+
+          <div class="facilities-grid">
+            <div class="facility-card">
+              <div class="facility-icon">📶</div>
+              <h3 class="facility-name">WiFi Gratis</h3>
+              <p class="facility-description">Internet berkecepatan tinggi di seluruh area hotel</p>
+            </div>
+
+            <div class="facility-card">
+              <div class="facility-icon">🏊</div>
+              <h3 class="facility-name">Kolam Renang</h3>
+              <p class="facility-description">Kolam renang infinity dengan pemandangan panorama</p>
+            </div>
+
+            <div class="facility-card">
+              <div class="facility-icon">🍽️</div>
+              <h3 class="facility-name">Restoran Mewah</h3>
+              <p class="facility-description">Restoran dan bar pemenang penghargaan</p>
+            </div>
+
+            <div class="facility-card">
+              <div class="facility-icon">🧘</div>
+              <h3 class="facility-name">Spa Mewah</h3>
+              <p class="facility-description">Spa layanan lengkap dan pusat kebugaran</p>
+            </div>
+
+            <div class="facility-card">
+              <div class="facility-icon">💪</div>
+              <h3 class="facility-name">Pusat Kebugaran</h3>
+              <p class="facility-description">Fasilitas gym canggih 24/7</p>
+            </div>
+
+            <div class="facility-card">
+              <div class="facility-icon">🚗</div>
+              <h3 class="facility-name">Valet Parking</h3>
+              <p class="facility-description">Layanan valet parking gratis</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="galeri" class="gallery">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Galeri</h2>
+            <p class="section-subtitle">Nikmati tur visual hotel menakjubkan dan akomodasi mewah kami.</p>
+          </div>
+
+          <div class="gallery-slider">
+            <div class="slider-container">
+              <img id="gallery-image" src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Galeri Hotel" class="slider-image" />
+              <button id="prev-btn" class="slider-btn prev-btn">‹</button>
+              <button id="next-btn" class="slider-btn next-btn">›</button>
+            </div>
+
+            <div class="slider-dots">
+              <button class="dot active" onclick="currentSlide(1)"></button>
+              <button class="dot" onclick="currentSlide(2)"></button>
+              <button class="dot" onclick="currentSlide(3)"></button>
+              <button class="dot" onclick="currentSlide(4)"></button>
+              <button class="dot" onclick="currentSlide(5)"></button>
+              <button class="dot" onclick="currentSlide(6)"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="tentang" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2 class="section-title">Tentang Droxe Hotel</h2>
+              <p class="about-paragraph">
+                Droxe Hotel telah menjadi sinonim dengan keramahan mewah selama lebih dari dua dekade. Komitmen kami terhadap keunggulan dan perhatian terhadap detail telah menjadikan kami pilihan utama bagi wisatawan yang mencari
+                pengalaman tak terlupakan.
+              </p>
+              <p class="about-paragraph">
+                Berlokasi di jantung kota, kami menawarkan akses tak tertandingi ke distrik bisnis, atraksi budaya, dan destinasi belanja. Tim profesional kami yang berdedikasi memastikan bahwa setiap aspek dari menginap Anda melampaui
+                ekspektasi.
+              </p>
+              <div class="about-stats">
+                <div class="stat">
+                  <div class="stat-number">150+</div>
+                  <div class="stat-label">Kamar Mewah</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-number">20+</div>
+                  <div class="stat-label">Tahun Pengalaman</div>
+                </div>
+              </div>
+            </div>
+            <div class="about-image">
+              <img src="https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lobby Hotel" class="about-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="kontak" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <p class="section-subtitle">Hubungi kami untuk reservasi, pertanyaan, atau bantuan apa pun yang Anda butuhkan.</p>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">📍</div>
+                  <div class="contact-text">
+                    <h3>Alamat</h3>
+                    <p>Jl. Kemewahan No. 123, Distrik Pusat Kota, Jakarta 12345</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">📞</div>
+                  <div class="contact-text">
+                    <h3>Telepon</h3>
+                    <p>+62 21 123-4567</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="contact-icon">✉️</div>
+                  <div class="contact-text">
+                    <h3>Email</h3>
+                    <p>info@droxehotel.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" placeholder="Nama Anda" class="form-input" required />
+                  <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" placeholder="Email Anda" class="form-input" required />
+                  <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                  <textarea id="message" name="message" placeholder="Pesan Anda" rows="5" class="form-textarea" required></textarea>
+                  <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" class="form-btn">Kirim Pesan</button>
+              </form>
+            </div>
+
+            <div class="contact-map">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.2087634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sHotel%20Indonesia%20Kempinski%20Jakarta!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Lokasi Hotel"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <h2 class="footer-title"><span class="footer-gold">Droxe</span> Hotel</h2>
+            <p class="footer-subtitle">Rasakan kemewahan dan kenyamanan di jantung kota.</p>
+            <div class="footer-links">
+              <a href="#" class="footer-link">Kebijakan Privasi</a>
+              <a href="#" class="footer-link">Syarat Layanan</a>
+              <a href="#" class="footer-link">Karir</a>
+            </div>
+            <p class="footer-copyright">© 2024 Droxe Hotel. Semua hak dilindungi.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
